@@ -21,3 +21,9 @@ pub unsafe fn data_mut<T: ?Sized>(mut val: *mut T) -> *mut () {
     *mem::transmute::<*mut *mut T, *mut *mut ()>(&mut val)
 }
 
+#[test]
+fn test_simple() {
+    let x = &7 as &Send;
+    unsafe { assert!(&7 == mem::transmute::<_, &i32>(data(x))) };
+}
+
