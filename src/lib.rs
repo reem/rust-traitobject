@@ -27,3 +27,10 @@ fn test_simple() {
     unsafe { assert!(&7 == mem::transmute::<_, &i32>(data(x))) };
 }
 
+/// A trait implemented for all trait objects.
+///
+/// Implementations for all traits in std are provided.
+pub unsafe trait Trait {}
+
+mod impls;
+
