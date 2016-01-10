@@ -19,5 +19,5 @@ of traitobject.
 
 ## License
 
-MIT
+MIT/Apache-2.0
 
