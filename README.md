@@ -9,7 +9,7 @@ with the rest of your dependencies:
 
 ```toml
 [dependencies]
-traitobject = "*"
+traitobject = "0.1"
 ```
 
 ## Author
